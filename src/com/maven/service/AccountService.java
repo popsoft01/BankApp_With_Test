@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 public interface AccountService {
     long openAccount(Customer theCustomer, AccountType type) throws MavenBankAccountException;
 
-    BigDecimal deposit(BigDecimal Balance, long account);
+    BigDecimal deposit(BigDecimal Balance, long account) throws MavenBankAccountException;
     Account findAccount(long accountNumber) throws  MavenBankAccountException;
     Account findAccount(Customer customer, long account) throws MavenBankAccountException;
 }
