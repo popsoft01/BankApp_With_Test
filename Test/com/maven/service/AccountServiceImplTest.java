@@ -182,6 +182,7 @@ class AccountServiceImplTest {
 
             Account johnCurrentAccount = accountService.findAccount(2);
             assertNotNull(johnCurrentAccount);
+            assertEquals(2,johnCurrentAccount.getAccountNumber());
         }catch (MavenBankAccountException ex){
             ex.printStackTrace();
         }
