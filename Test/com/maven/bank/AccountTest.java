@@ -29,7 +29,7 @@ public class AccountTest {
 
         johnAccount.setAccountNumber(BankService.generateAccountNumber());
         johnAccount.setBalance(new BigDecimal(5000));
-        johnAccount.setAccountId("");
+        johnAccount.setAccountId("1234");
         johnAccount.setType(AccountType.SAVING);
 
         assertTrue(CustomerRepo.getCustomer().isEmpty());

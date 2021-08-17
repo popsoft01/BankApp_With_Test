@@ -1,8 +1,8 @@
 package com.maven.service;
 
 public class BankService {
-    private static long currentBVN =0;
-    private static long currentAccount =0;
+    private static long currentBVN =2;
+    private static long currentAccount =3;
 
     public static long generateBVN(){
         currentBVN++;

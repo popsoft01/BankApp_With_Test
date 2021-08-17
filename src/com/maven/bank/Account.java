@@ -10,6 +10,20 @@ public class Account {
     private AccountType type;
     private String accountId;
 
+    public Account() {
+    }
+
+    public Account(long accountNumber, AccountType type) {
+        this.accountNumber = accountNumber;
+        this.type = type;
+    }
+
+    public Account(long accountNumber, BigDecimal balance, AccountType type) {
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+        this.type = type;
+    }
+
     public long getAccountNumber() {
         return accountNumber;
     }
