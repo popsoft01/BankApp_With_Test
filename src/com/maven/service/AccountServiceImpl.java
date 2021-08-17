@@ -25,8 +25,10 @@ public class AccountServiceImpl implements  AccountService{
     }
 
     @Override
-    public BigDecimal deposit(BigDecimal Balance, long account) {
+    public BigDecimal deposit(BigDecimal amount, long account) throws MavenBankAccountException {
         BigDecimal newBalance = BigDecimal.ZERO;
+        Account depositAccount = findAccount(account);
+       newBalance= depositAccount.getBalance().add(amount);
         return newBalance;
     }
 
